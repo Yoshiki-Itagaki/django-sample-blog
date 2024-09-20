@@ -20,5 +20,6 @@ def posts(request):
 def post_detail(request, slug):
     matching_post = get_object_or_404(Post, slug=slug)
     return render(request, "blog/post-detail.html", {
-        "post": matching_post
+        "post": matching_post,
+        "post_tags": matching_post.tags.all()
     })
