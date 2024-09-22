@@ -14,11 +14,13 @@ class Author(models.Model):
     def __str__(self) -> str:
         return self.full_name()
     
+    
 class Tag(models.Model):
     caption = models.CharField(max_length=20)
     
     def __str__(self) -> str:
         return self.caption
+
 
 class Post(models.Model):   
     title = models.CharField(max_length=150)
