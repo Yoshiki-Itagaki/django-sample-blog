@@ -72,8 +72,7 @@ body {
 
   #read-later button:hover,
   #read-later button:active {
-    background-color: white;
-    color: #390281;
+    background-color: rgb(18, 206, 27);
   }
   
   main {
